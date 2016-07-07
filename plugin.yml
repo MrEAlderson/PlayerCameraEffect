@@ -1,0 +1,14 @@
+{
+  "website": "http://Marcely.de", 
+  "commands": {
+    "pce": {
+      "description": "Play a camera effect.",
+      "usage": "/pce"
+    }
+  }, 
+  "version": 1.0.2, 
+  "name": "PlayerCameraEffect", 
+  "author": "Marcely1199", 
+  "main": "de.marcely.pcel.PlayerCameraEffectPlugin", 
+  "description": "A plugin to play Camera Effects",
+}
