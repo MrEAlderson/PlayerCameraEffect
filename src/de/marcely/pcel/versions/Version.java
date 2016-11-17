@@ -13,7 +13,8 @@ public enum Version {
 	R3_8(8),
 	R1_9(9),
 	R2_9(9),
-	R1_10(10);
+	R1_10(10),
+	R1_11(11);
 	
 	private int selected_number;
 	private VersionClass selected_class;
@@ -72,6 +73,11 @@ public enum Version {
 			}else if(v2 == 10){
 				
 				if(v3 >= 0) version = R1_10;
+				
+			// 1.11.*
+			}else if(v2 == 11){
+				
+				if(v3 >= 0) version = R1_11;
 				
 			}
 		}
