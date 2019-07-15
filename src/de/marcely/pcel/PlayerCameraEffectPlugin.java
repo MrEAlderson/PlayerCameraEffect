@@ -63,6 +63,7 @@ public class PlayerCameraEffectPlugin extends JavaPlugin {
 		makingPlayers.add(player);
 		
 		// backup inventory
+		final GameMode gm = player.getGameMode();
 		final ItemStack[] invIs1 = player.getInventory().getContents();
 		final ItemStack[] invIs2 = player.getInventory().getArmorContents();
 		final double invHealth = player.getHealthScale();
@@ -79,7 +80,7 @@ public class PlayerCameraEffectPlugin extends JavaPlugin {
 		
 		// send effect
 		player.setGameMode(GameMode.SPECTATOR);
-		Version.sendCameraPacket(player, e);
+		Version.current.getHandler().sendCameraPacket(player, e);
 		
 		// kill entity
 		e.remove();
@@ -89,11 +90,11 @@ public class PlayerCameraEffectPlugin extends JavaPlugin {
 		player.setExp(0);
 		
 		// kill & respawn player
-		player.setGameMode(GameMode.SURVIVAL);
+		player.setGameMode(gm);
 		player.damage(100);
 		if(player.getHealth() > 0)
 			player.setHealth(0);
-		Version.forceRespawn(player);
+		Version.current.getHandler().forceRespawn(player);
 		
 		// teleport him back
 		Bukkit.getScheduler().scheduleSyncDelayedTask(PlayerCameraEffectPlugin.plugin, new Runnable(){

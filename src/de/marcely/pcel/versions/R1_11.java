@@ -12,7 +12,7 @@ import org.bukkit.entity.Player;
 
 import de.marcely.pcel.PlayerCameraEffectPlugin;
 
-public class R1_11 {
+public class R1_11 extends VersionHandler {
 	
 	public void forceRespawn(final Player player){
 		Bukkit.getScheduler().scheduleSyncDelayedTask(PlayerCameraEffectPlugin.plugin, new Runnable(){
