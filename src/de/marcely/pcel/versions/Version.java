@@ -23,6 +23,7 @@ public enum Version {
 	R2_13(13, R2_13.class),
 	
 	R1_14(14, R1_14.class);
+	R1_15(15, R1_15.class);
 	
 	public static Version current;
 	
