@@ -1,0 +1,12 @@
+website: https://marcely.de
+version: ${project.version}
+name: PlayerCameraEffect
+author: Marcely1199
+main: de.marcely.pcel.PlayerCameraEffectPlugin
+description: Changes the way how the player sees the world
+api-version: 1.13
+
+commands:
+    pce: 
+      description: Manage the plugin with that command
+      usage: /pce

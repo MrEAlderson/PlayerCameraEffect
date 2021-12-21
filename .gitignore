@@ -12,6 +12,7 @@ cmake-build-debug/
 
 # IntelliJ
 /out/
+*/out/
 
 # Eclipse
 .settings/
@@ -50,4 +51,4 @@ sent/
 # Avoid ignoring Maven wrapper jar file (.jar files are usually ignored)
 !/.mvn/wrapper/maven-wrapper.jar
 
-libs/spigot/
+Plugin/libs/spigot/
