@@ -20,7 +20,7 @@ public class R2_16 extends VersionHandler {
 	@Override
 	public void sendCameraPacket(Player player, Entity e){
 		final PacketPlayOutCamera packet = new PacketPlayOutCamera(((CraftEntity) e).getHandle());
-		
+
 		((CraftPlayer) player).getHandle().playerConnection.sendPacket(packet);
 	}
 }
