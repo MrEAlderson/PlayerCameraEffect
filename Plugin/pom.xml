@@ -72,10 +72,10 @@
         </dependency>
         <dependency>
             <groupId>org.spigotmc</groupId>
-            <artifactId>spigot-1.11.3</artifactId>
-            <version>1.11.3-R0.1-SNAPSHOT</version>
+            <artifactId>spigot-1.11.2</artifactId>
+            <version>1.11.2-R0.1-SNAPSHOT</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/libs/spigot/spigot-1.11.3.jar</systemPath>
+            <systemPath>${project.basedir}/libs/spigot/spigot-1.11.2.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>org.spigotmc</groupId>
