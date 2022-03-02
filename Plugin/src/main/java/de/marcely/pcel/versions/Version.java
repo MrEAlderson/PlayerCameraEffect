@@ -31,7 +31,8 @@ public enum Version {
 
 	R1_17(17, R1_17.class),
 
-	R1_18(18, R1_18.class);
+	R1_18(18, R1_18.class),
+	R2_18(18, R2_18.class);
 	
 	public static Version current;
 	
